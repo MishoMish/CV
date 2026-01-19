@@ -32,6 +32,10 @@
     pdftitle={Mihail Dobroslavski - CV}
 }
 
+% Add underline to all hyperlinks
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\underline{#2}}}
+
 % Remove page numbers
 \pagestyle{empty}
 
@@ -82,6 +86,7 @@
     \noindent\textbf{#1} \hfill \textit{#3}\\
     \textit{#2} \hfill #4\\
     \textbf{Stack:} #5
+    \vspace{2pt}
 }
 
 % Education entry command
@@ -116,10 +121,7 @@
 % PROFILE
 %-------------------------------------------------------------------------------
 \cvprofile{
-    Computer Science undergraduate with 2 years of production full-stack experience.
-    Teaching Assistant for systems programming courses (C++).
-    Active Student Council member coordinating large-scale university events and engaging with diverse stakeholders daily.
-    Primarily focused on web development, but always ready to tackle any technical challenge thrown my way.
+    Computer Science undergraduate with 2 years of full-stack production experience in the media sector. Strong focus on frontend development using React and TypeScript, with exposure to backend services and cloud deployment. Teaching assistant and student council member with expertise in systems programming. Open-source contributor with personal projects showcased on GitHub.
 }
 
 %-------------------------------------------------------------------------------
@@ -127,9 +129,9 @@
 %-------------------------------------------------------------------------------
 \section{Skills}
 
-\cvskill{Languages}{C++, TypeScript, JavaScript, SQL, HTML/CSS, Java; language-agnostic learner}\\[2pt]
-\cvskill{Frameworks}{React, Node.js, Koa, Tailwind CSS, video.js}\\[2pt]
-\cvskill{Tools}{PostgreSQL, Docker, Azure, Git, Keycloak, Storybook, Knex}\\[2pt]
+\cvskill{Languages}{C++, TypeScript, JavaScript, SQL, HTML/CSS, Java}\\[2pt]
+\cvskill{Frameworks \& Libraries}{React, Node.js, Koa, Tailwind CSS, video.js, Knex}\\[2pt]
+\cvskill{Tools \& Platforms}{PostgreSQL, Docker, Azure, Git, Keycloak, Storybook}\\[2pt]
 \cvskill{Concepts}{REST APIs, Authentication (JWT/OAuth), CI/CD, Infrastructure as Code, Containerization}
 
 %-------------------------------------------------------------------------------
@@ -145,11 +147,13 @@
     {React, TypeScript, Node.js, Koa, PostgreSQL, Keycloak, Azure, Docker, Terraform}
 
 \begin{itemize}
-    \item Built \textbf{BNT Play}, a production content delivery and media administration platform serving national broadcast infrastructure.
-    \item Developed responsive frontend with React 18, TypeScript, Vite, and Tailwind; implemented video playback using video.js with custom streaming controls.
+    \item Contributed to \textbf{BNT Play}, a national-scale VOD and streaming platform serving \textbf{20 thousand active users} across Bulgaria's broadcast infrastructure.
+    \item Engineered a reusable UI component library using \textbf{Storybook} and TypeScript, standardizing the design system across the BNT Play platform.
+    \item Implemented video playback utilizing \textbf{video.js}, supporting \textbf{HLS streaming} for live broadcasts and progressive MP4 delivery for on-demand content.
+    \item Collaborated with a small development team to deliver production features using established Azure infrastructure and CI/CD workflows.
 \end{itemize}
 
-\vspace{6pt}
+\vspace{4pt}
 
 \cventry
     {Teaching Assistant}
@@ -159,8 +163,9 @@
     {C++, Data Structures and Programming, OOP}
 
 \begin{itemize}
-    \item Led lab sessions and graded assignments for 3 core CS courses: Introduction to Programming, Object-Oriented Programming, and Data Structures and Programming.
-    \item Provided one-on-one debugging sessions and code reviews to reinforce best practices in C++ development.
+    \item Mentored \textbf{75+ students} across 3 core CS courses, conducting weekly lab sessions and code reviews.
+    \item Authored \textbf{automated test cases} for grading assignments, improving grading efficiency and consistency.
+    \item Provided 1:1 mentorship on complex topics like memory management and OOP principles, helping students master foundational concepts.
 \end{itemize}
 
 %-------------------------------------------------------------------------------
@@ -174,14 +179,6 @@
     {2022 -- 2026 (Expected)}
     {Relevant coursework: Data Structures, Algorithms, Operating Systems, Databases, OOP, Computer Networks}
 
-\vspace{6pt}
-
-\cveducation
-    {High School Diploma, Mathematics and Computer Science}
-    {National High School of Science and Mathematics, Bulgaria}
-    {Sep 2017 -- May 2022}
-    {GPA: 6.00/6.00}
-
 %-------------------------------------------------------------------------------
 % LEADERSHIP & COMMUNITY
 %-------------------------------------------------------------------------------
@@ -190,9 +187,9 @@
 \noindent\textbf{Student Council Member} \hfill \textit{Apr 2024 -- Present}\\
 \textit{Faculty of Mathematics and Informatics}
 \begin{itemize}
-    \item Organized \textbf{FMI Codes}, one of Bulgaria's largest student hackathons; led technical production for a 7+ hour live-streamed closing ceremony.
+    \item Organized \textbf{FMI Codes}, one of Bulgaria's largest student hackathons with \textbf{100+ participants} across 18 teams; led technical production for a \href{https://www.youtube.com/watch?v=UXKOYHhelAc}{7 hour live-streamed closing ceremony}.
     \item Coordinated logistics and onboarding for 300+ first-year students during \textbf{Freshers Weekend FMI Edition}.
-    \item Supported \textbf{FMI Game Olympics} tournaments across chess, board games, table tennis, and esports.
+    \item Led the organizing team for \textbf{FMI Game Olympics} tournaments across chess, board games, table tennis, and esports.
 \end{itemize}
 
 %-------------------------------------------------------------------------------
